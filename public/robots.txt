@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Exclure l'espace client de l'indexation
+Disallow: /espace-client
+
+# Exclure les pages légales si non prêtes
+# Disallow: /confidentialite
+# Disallow: /mentions-legales
+
+# Sitemap
+Sitemap: https://optiflux-marketing.com/sitemap.xml

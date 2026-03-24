@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — OPTIFLUX Marketing</title>
+  <meta name="description" content="Découvrez nos 3 expertises : marketing digital, développement web et formation. Des prestations complètes pour booster votre business en Afrique." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a href="#main-content" class="sr-only" style="position:absolute;top:1rem;left:1rem;z-index:100;padding:.5rem 1rem;background:#fff;color:#2563EB;border-radius:8px;font-family:Outfit,sans-serif;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.15);">Aller au contenu principal</a>
+
+<!-- HEADER -->
+<header id="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="OPTIFLUX Marketing — Retour à l'accueil">
+        <div class="logo-icon" aria-hidden="true">OF</div>
+        <span class="logo-text">OPTIFLUX</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="blog.html">Blog</a>
+        <a href="temoignages.html">Témoignages</a>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="contact-link">Contact</a>
+        <button class="btn-booking" data-open-booking>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Réserver un appel
+        </button>
+      </div>
+      <button id="btn-hamburger" class="btn-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
+<nav id="mobile-menu" role="navigation" aria-label="Menu mobile">
+  <ul class="mobile-nav-list">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="temoignages.html">Témoignages</a></li>
+  </ul>
+  <div class="mobile-actions">
+    <a href="contact.html" class="btn-contact-mobile">Contact</a>
+    <button class="btn-booking-mobile" data-open-booking>Réserver un appel gratuit</button>
+  </div>
+</nav>
+
+<main id="main-content" tabindex="-1">
+
+  <!-- Hero -->
+  <div class="page-hero" style="background: linear-gradient(to bottom, #fff, #F8FAFC);">
+    <div class="container">
+      <span class="section-badge section-badge--blue anim-fade-up">Nos expertises</span>
+      <h1 class="page-hero-title anim-fade-up" style="margin-top:1rem;">
+        Ce que nous faisons<br>
+        <span class="gradient-text">de mieux</span>
+      </h1>
+      <p class="page-hero-desc anim-fade-up">
+        Marketing digital, développement web, formation &amp; coaching — une expertise complète sous un même toit pour digitaliser et faire croître votre activité en Afrique.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="anim-fade-up">
+        <button class="btn-primary" data-open-booking>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Réserver un appel gratuit
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Marketing Digital -->
+  <section id="marketing" style="padding:5rem 0; background:#fff;" aria-label="Marketing Digital">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;" class="anim-fade-up">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:.75rem;padding:.75rem 1.25rem;border-radius:16px;background:#EFF6FF;margin-bottom:1.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            <h2 style="font-family:var(--font-display);font-size:28px;font-weight:800;color:#0B0B0B;">Marketing Digital</h2>
+          </div>
+          <p style="font-family:var(--font-body);font-size:16px;color:#64748B;line-height:1.75;margin-bottom:2rem;">
+            Développez votre présence en ligne et atteignez vos clients cibles grâce à des stratégies digitales performantes, mesurables et adaptées au marché africain.
+          </p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+              <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🎯 Gestion des réseaux sociaux</h4>
+              <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Community management professionnel sur Facebook, Instagram et LinkedIn. Planning éditorial et croissance organique durable.</p>
+            </div>
+            <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+              <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">📣 Publicité Meta Ads</h4>
+              <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Campagnes Facebook &amp; Instagram ciblées avec créatifs percutants. Optimisation continue pour maximiser votre ROI.</p>
+            </div>
+            <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+              <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🎨 Création de contenu</h4>
+              <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Visuels professionnels, vidéos courtes, stories et reels. Contenu qui engage et reflète l'identité de votre marque.</p>
+            </div>
+            <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+              <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🚀 Stratégie de croissance</h4>
+              <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Plan d'action digital sur mesure avec objectifs clairs, KPIs définis et calendrier de mise en œuvre progressif.</p>
+            </div>
+            <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+              <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">💰 Monétisation des comptes</h4>
+              <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Partenariats, affiliation, vente directe — nous identifions les meilleures opportunités pour transformer votre audience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Web -->
+  <section id="web" style="padding:5rem 0; background:#F8FAFC;" aria-label="Développement Web">
+    <div class="container">
+      <div class="anim-fade-up">
+        <div style="display:inline-flex;align-items:center;gap:.75rem;padding:.75rem 1.25rem;border-radius:16px;background:#F5F3FF;margin-bottom:1.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+          <h2 style="font-family:var(--font-display);font-size:28px;font-weight:800;color:#0B0B0B;">Développement Web &amp; App</h2>
+        </div>
+        <p style="font-family:var(--font-body);font-size:16px;color:#64748B;line-height:1.75;margin-bottom:2rem;">
+          Des sites web et applications sur mesure, rapides et optimisés, conçus pour convertir vos visiteurs en clients et refléter l'excellence de votre marque.
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+          <div style="background:#fff;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🌐 Sites web sur mesure</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Design unique, expérience utilisateur soignée et code propre. Sites professionnels, rapides et optimisés SEO.</p>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">⚡ Applications web</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Dashboards, outils métier, plateformes e-commerce — parfaitement adaptées à vos processus business.</p>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🎯 Landing pages conversion</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Pages conçues pour convertir. Structure persuasive, copywriting impactant et taux de conversion optimisé.</p>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">💳 Intégration paiement</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Mobile Money (Orange, MTN) et international (Stripe, PayPal). Votre boutique encaisse partout, en toute sécurité.</p>
+          </div>
+          <div style="background:#fff;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🔍 Maintenance &amp; SEO</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Suivi technique, mises à jour régulières et optimisation Google. Votre site reste performant et bien positionné.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Formation -->
+  <section id="formation" style="padding:5rem 0; background:#fff;" aria-label="Formation &amp; Coaching">
+    <div class="container">
+      <div class="anim-fade-up">
+        <div style="display:inline-flex;align-items:center;gap:.75rem;padding:.75rem 1.25rem;border-radius:16px;background:#FFF7ED;margin-bottom:1.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <h2 style="font-family:var(--font-display);font-size:28px;font-weight:800;color:#0B0B0B;">Formation &amp; Coaching</h2>
+        </div>
+        <p style="font-family:var(--font-body);font-size:16px;color:#64748B;line-height:1.75;margin-bottom:2rem;">
+          Montez en compétences avec nos formations pratiques. Du marketing au code, des ateliers concrets pour une progression rapide et directement applicable.
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+          <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">📱 Formation Marketing Digital</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Du débutant à l'autonomie : réseaux sociaux, publicité, analytics et stratégie. Ateliers pratiques avec cas réels.</p>
+          </div>
+          <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🎨 Design avec Canva</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Créez des visuels professionnels sans être graphiste. Posts, affiches, présentations, branding en quelques heures.</p>
+          </div>
+          <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🎬 Montage vidéo CapCut</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Créez des vidéos engageantes pour TikTok, Reels et YouTube Shorts. Effets, sous-titres, musique — contenu viral.</p>
+          </div>
+          <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">💻 Web Coding</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">HTML, CSS, JavaScript et bases de React. Formation progressive avec projets concrets pour acquérir une vraie compétence.</p>
+          </div>
+          <div style="background:#F8FAFC;border-radius:12px;padding:1.25rem;border:1px solid #E2E8F0;">
+            <h4 style="font-family:var(--font-display);font-size:15px;font-weight:700;color:#0B0B0B;margin-bottom:.5rem;">🤝 Coaching personnalisé 1-1</h4>
+            <p style="font-family:var(--font-body);font-size:13.5px;color:#64748B;line-height:1.6;">Séances individuelles adaptées à votre rythme et vos objectifs. Accompagnement direct par Abraham.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notre Processus -->
+  <section style="padding:5rem 0; background:#F8FAFC;" aria-label="Notre processus de travail">
+    <div class="container">
+      <div class="anim-fade-up" style="text-align:center;margin-bottom:3rem;">
+        <span class="section-badge section-badge--blue">Notre processus</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:800;color:#0B0B0B;margin-top:1rem;">Comment nous travaillons</h2>
+      </div>
+      <div class="process-steps anim-fade-up">
+        <div class="process-step">
+          <div class="process-number">01</div>
+          <h3 class="process-title">Découverte</h3>
+          <p class="process-desc">Appel de 30 min pour comprendre votre activité, vos objectifs et les défis actuels. Audit de votre présence digitale existante.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">02</div>
+          <h3 class="process-title">Stratégie</h3>
+          <p class="process-desc">Conception d'une feuille de route sur mesure avec des KPIs clairs, un budget optimisé et un calendrier de mise en œuvre réaliste.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">03</div>
+          <h3 class="process-title">Exécution</h3>
+          <p class="process-desc">Mise en œuvre rigoureuse du plan — contenu, campagnes, développement — avec des rapports d'avancement hebdomadaires.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">04</div>
+          <h3 class="process-title">Résultats</h3>
+          <p class="process-desc">Analyse des performances, optimisation continue et reporting transparent. Nous ajustons jusqu'à atteindre et dépasser vos objectifs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:5rem 0; background:#fff;">
+    <div class="container">
+      <div class="cta-box anim-fade-up">
+        <div class="cta-decos" aria-hidden="true"><div class="cta-deco-1"></div><div class="cta-deco-2"></div><div class="cta-dots"></div></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Quel service vous convient ?</h2>
+          <p class="cta-subtitle">Réservez un appel gratuit de 30 minutes. On analyse ensemble votre situation et on définit la meilleure stratégie pour vous.</p>
+          <div class="cta-btns">
+            <button class="btn-cta-primary" data-open-booking>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Réserver un appel gratuit
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <a href="https://wa.me/224620975273" target="_blank" rel="noopener noreferrer" class="btn-cta-whatsapp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Écrire sur WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><div class="footer-logo-icon">OF</div><span class="footer-logo-text">OPTIFLUX</span></a>
+          <p class="footer-tagline">Agence digitale africaine. Nous transformons vos idées en business digital rentable.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com/optifluxmarketing" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://instagram.com/optifluxmarketing" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://linkedin.com/company/optifluxmarketing" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h3>Navigation</h3><ul class="footer-links"><li><a href="index.html">Accueil</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h3>Nos services</h3><ul class="footer-links"><li><a href="#marketing">Marketing Digital</a></li><li><a href="#web">Développement Web</a></li><li><a href="#formation">Formation &amp; Coaching</a></li></ul></div>
+        <div class="footer-col"><h3>Contactez-nous</h3><ul class="footer-contact-list"><li class="footer-contact-item footer-contact-item--wa"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.43A2 2 0 0 1 3.58 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="https://wa.me/224620975273" target="_blank" rel="noopener noreferrer">+224 620 975 273</a></li><li class="footer-contact-item footer-contact-item--mail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:optifluxmarketing@gmail.com">optifluxmarketing@gmail.com</a></li><li class="footer-contact-item footer-contact-item--loc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Conakry, Guinée</span></li></ul></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner"><p class="footer-copy">© <span id="footer-year"></span> OPTIFLUX Marketing. Tous droits réservés.</p><div class="footer-legal"><a href="confidentialite.html">Confidentialité</a><a href="mentions-legales.html">Mentions légales</a></div></div></div></div>
+</footer>
+
+<!-- FAB WhatsApp -->
+<div id="wa-fab" class="whatsapp-fab"><div class="wa-tooltip">Discutons de votre projet !</div><a class="wa-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="wa-ping"></span></a></div>
+<button id="scroll-top-btn" class="scroll-top-btn" aria-label="Retour en haut"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+<!-- Modale réservation -->
+<div id="booking-overlay" class="modal-overlay"></div>
+<div id="booking-wrap" class="modal-wrap" role="dialog" aria-modal="true" aria-label="Réserver un appel">
+  <div class="modal-box">
+    <div class="modal-header"><div class="modal-deco-1"></div><div class="modal-deco-2"></div><button id="booking-close" class="modal-close" aria-label="Fermer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-header-row"><div class="modal-cal-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h2 class="modal-title">Appel stratégique gratuit</h2></div><p class="modal-subtitle">30 minutes de conseil offert</p></div>
+    <div class="modal-body">
+      <ul class="modal-benefits"><li class="modal-benefit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Appel de 30 minutes offert, sans engagement</span></li><li class="modal-benefit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Plan d'action personnalisé</span></li><li class="modal-benefit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Devis sur mesure offert</span></li></ul>
+      <hr class="modal-divider" />
+      <div class="modal-actions"><a id="modal-book-btn" href="https://cal.com/optiflux" target="_blank" rel="noopener noreferrer" class="btn-modal-book"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Réserver en ligne</a><a id="modal-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-modal-wa"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Via WhatsApp</a></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

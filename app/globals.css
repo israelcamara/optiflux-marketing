@@ -1,26 +1,228 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================
+   OPTIFLUX Marketing — Styles globaux
+   ============================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Palette de couleurs */
+  --color-brand: #2563EB;
+  --color-brand-dark: #1D4ED8;
+  --color-brand-light: #DBEAFE;
+  --color-accent: #7C3AED;
+  --color-accent-dark: #6D28D9;
+  --color-accent-light: #EDE9FE;
+  --color-orange: #F97316;
+  --color-orange-light: #FED7AA;
+
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #F8FAFC;
+  --color-bg-dark: #0F172A;
+
+  --color-text: #0B0B0B;
+  --color-text-secondary: #64748B;
+  --color-text-muted: #94A3B8;
+
+  --color-border: #E2E8F0;
+  --color-border-light: #F1F5F9;
+
+  /* Typographie */
+  --font-display: var(--font-outfit);
+  --font-body: var(--font-jakarta);
+
+  /* Ombres */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-brand: 0 8px 32px rgba(37, 99, 235, 0.25);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  color: #0B0B0B;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Titres en font display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* Sélection de texte */
+::selection {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Utilitaires de dégradé */
+.gradient-text {
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+}
+
+.gradient-bg-soft {
+  background: linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 100%);
+}
+
+/* Animation d'entrée */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Focus visible pour l'accessibilité */
+:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── PROSE ARTICLE (blog) ── */
+.prose-article {
+  font-family: var(--font-jakarta);
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: #374151;
+}
+.prose-article h2 {
+  font-family: var(--font-outfit);
+  font-size: 22px;
+  font-weight: 800;
+  color: #0B0B0B;
+  letter-spacing: -0.02em;
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+}
+.prose-article p {
+  margin-bottom: 1.2rem;
+}
+.prose-article strong {
+  font-weight: 700;
+  color: #0B0B0B;
+}
+.prose-article .callout {
+  background: #EFF6FF;
+  border-left: 4px solid #2563EB;
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: 14.5px;
+}
+.prose-article ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.prose-article ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.prose-article ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #2563EB;
+  font-weight: 700;
+}
+
+/* ── MARQUEE (défilement horizontal infini) ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── SHIMMER sur le texte ── */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+/* ── Pulsation douce ── */
+@keyframes softPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.7; transform: scale(0.85); }
+}
+
+.dot-pulse {
+  animation: softPulse 2s ease-in-out infinite;
 }

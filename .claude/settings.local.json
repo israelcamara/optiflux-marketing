@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
-      "Bash(rmdir claude.md)"
+      "Bash(rmdir claude.md)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(curl:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/ABRAHAM PC/Desktop/CLAUDE PROJET/optifluxlarketing.com/**)",
+      "Bash(done)",
+      "Bash(do)",
+      "Bash(echo \"=== $f ===\")",
+      "Read(//c/Users/ABRAHAM PC/Desktop/CLAUDE PROJET/optifluxlarketing.com/app/**)",
+      "Bash(find 'C:/Users/ABRAHAM PC/Desktop/CLAUDE PROJET/optifluxlarketing.com/components' -name *.tsx)"
     ]
   }
 }
